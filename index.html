@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+  <title>Estimation Poker Cards</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="jquery.fittext.js"></script>
+  <script>
+    jQuery("#responsive_headline").fitText({minFontSize: '200px'});
+  </script>
+  <style>
+    h1 {
+      font-size: 95px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1 id='responsive_headline'>1</h1>
+  <script>
+    let items = [1,2,3,5,8,13];
+    let idx = 0;
+
+    $('#responsive_headline').click(() => {
+      idx++;
+      if(idx >= items.length)
+        idx = 0;
+      $('#responsive_headline').text(items[idx]);
+    });
+  </script>
+</body>
+</html>
