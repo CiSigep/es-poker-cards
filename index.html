@@ -5,10 +5,6 @@
 			  src="https://code.jquery.com/jquery-1.12.4.min.js"
 			  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
 			  crossorigin="anonymous"></script>
-  <script src="jquery.fittext.js"></script>
-  <script>
-    jQuery("#responsive_headline").fitText();
-  </script>
   <style>
     h1 {
       font-size: 800px;
@@ -18,16 +14,16 @@
   </style>
 </head>
 <body>
-  <h1 id='responsive_headline'>1</h1>
+  <h1 id='headline'>1</h1>
   <script>
     let items = [1,2,3,5,8,13];
     let idx = 0;
 
-    $('#responsive_headline').click(() => {
+    $('#headline').click(() => {
       idx++;
       if(idx >= items.length)
         idx = 0;
-      $('#responsive_headline').text(items[idx]);
+      $('#headline').text(items[idx]);
     });
   </script>
 </body>
